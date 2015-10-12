@@ -1,0 +1,63 @@
+{{<layout}}
+
+{{$pageTitle}}
+	TLFD Service
+{{/pageTitle}}
+
+{{$content}}
+
+<main id="content" role="main">
+
+  <div class="phase-banner">
+    <p>
+      <strong class="phase-tag">ALPHA</strong>
+      <span>This is a new service – your <a href="https://designpatterns.hackpad.com/GOV.UK-elements-feedback-sKrDyQxcfA2">feedback</a> will help us to improve it.</span>
+    </p>
+  </div>
+  
+  <form action="/sms/page_summary" method="post" class="form">
+
+    <h1 class="form-title heading-large">Page Summary</h1>
+
+    <div class="form-group">
+      <h2 class="summary-item-heading">Page Summary</h2>
+      <table class="summary-item-body">
+        <thead class="summary-item-field-headings">
+          <tr>
+            <th scope="col">Page</th>
+            <th scope="col">Field</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="summary-item-row">
+            <td class="summary-item-field-name"><span>Page One</span></td>
+            <td class="summary-item-field-content"><span>
+	     <ul>
+                <li>Field 11</li>
+                <li>Field 12</li>
+                <li>Field 13</li>
+              </ul>
+		</span>
+	    </td>
+          </tr>
+           <tr class="summary-item-row">
+            <td class="summary-item-field-name"><span>Page Two</span></td>
+            <td class="summary-item-field-content"><span>
+	      <ul>
+                <li>Field 21</li>
+                <li>Field 22</li>
+                <li>Field 23</li>
+              </ul>		
+             </span></td>
+          </tr>	 
+        </tbody>
+      </table>
+    </div>
+	
+  </form>
+
+</main><!-- / #page-container -->
+
+{{/content}}
+
+{{/layout}}

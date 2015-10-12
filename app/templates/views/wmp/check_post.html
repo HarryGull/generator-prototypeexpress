@@ -1,0 +1,63 @@
+{{<layout}}
+
+{{$pageTitle}}
+	TLFD Service
+{{/pageTitle}}
+
+{{$content}}
+
+<main id="content" role="main">
+
+  <div class="phase-banner">
+    <p>
+      <strong class="phase-tag">ALPHA</strong>
+      <span>This is a new service – your <a href="https://designpatterns.hackpad.com/GOV.UK-elements-feedback-sKrDyQxcfA2">feedback</a> will help us to improve it.</span>
+    </p>
+  </div>
+  
+  <form action="/wmp/check_post" method="post" class="form">
+
+    <h1 class="form-title heading-large">Check Post</h1>
+
+    <div class="form-group">
+      <h2 class="summary-item-heading">Check Post</h2>
+      <table class="summary-item-body">
+        <thead class="summary-item-field-headings">
+          <tr>
+            <th scope="col">Key</th>
+            <th scope="col">Value</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="summary-item-row">
+            <td class="summary-item-field-name"><span>Type</span></td>
+            <td class="summary-item-field-content"><span>UTR</span></td>
+          </tr>
+           <tr class="summary-item-row">
+            <td class="summary-item-field-name"><span>ID</span></td>
+            <td class="summary-item-field-content"><span>1234</span></td>
+          </tr>
+	 <tr class="summary-item-row">
+            <td class="summary-item-field-name"><span>Date Sent</span></td>
+            <td class="summary-item-field-content"><span>2015-06-28</span></td>
+          </tr>
+          <tr class="summary-item-row">
+            <td class="summary-item-field-name"><span>Date Received</span></td>
+            <td class="summary-item-field-content"><span>2015-07-01</span></td>
+          </tr>
+          <tr class="summary-item-row">
+            <td class="summary-item-field-name"><span>Status</span></td>
+            <td class="summary-item-field-content"><span>Received</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+	
+	<p><a id="back" href="/wmp/search">Back</a></p>
+  </form>
+
+</main><!-- / #page-container -->
+
+{{/content}}
+
+{{/layout}}

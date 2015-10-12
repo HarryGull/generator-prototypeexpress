@@ -1,0 +1,71 @@
+{{<layout}}
+
+{{$pageTitle}}
+	TLFD Service
+{{/pageTitle}}
+
+{{$content}}
+
+<main id="content" role="main">
+
+  <div class="phase-banner">
+    <p>
+      <strong class="phase-tag">ALPHA</strong>
+      <span>This is a new service – your <a href="https://designpatterns.hackpad.com/GOV.UK-elements-feedback-sKrDyQxcfA2">feedback</a> will help us to improve it.</span>
+    </p>
+  </div>
+  <div class="logo">
+        <span class="organisation-logo organisation-logo-medium">HM Revenue &amp; Customs</span>
+    </div>
+  <form action="/sms/page_two" method="post" class="form">
+
+    <h1 class="form-title heading-large">
+      Page Two
+    </h1>
+
+     <fieldset>
+
+	<legend>
+		<span class="form-label-bold">
+		 Field One
+		</span>
+      </legend>     
+      <div class="form-group form-group-compound">
+          <input id="fieldTwoOne" type="text" />
+      </div>
+
+      <legend>
+		<span class="form-label-bold">
+		 Field Two
+		</span>
+      </legend>     
+      <div class="form-group form-group-compound">
+          <input id="fieldTwoTwo" type="text" />
+      </div>
+
+	<legend>
+		<span class="form-label-bold">
+		 Field Three
+		</span>
+      </legend>     
+      <div class="form-group form-group-compound">
+          <input id="fieldTwoThree" type="text" />
+      </div>
+
+
+
+
+	</fieldset>
+
+    <button type="submit" class="button">Submit</button>
+<p><a id="back" href="/sms/page_one">Back</a></p>
+
+    
+
+  </form>
+
+</main><!-- / #page-container -->
+
+{{/content}}
+
+{{/layout}}

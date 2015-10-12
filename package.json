@@ -1,0 +1,36 @@
+{
+  "name": "generator-prototypeexpress",
+  "version": "0.0.1",
+  "description": "A generator for Yeoman to will kick start a Node Application using Express.",
+  "keywords": [
+    "yeoman-generator"
+  ],
+  "homepage": "https://github.com/HarryGull/generator-prototypeexpress",
+  "bugs": {
+    "url": "https://github.com/HarryGull/generator-prototypeexpress/issues"
+  },
+  "author": {
+    "name": "Harry",
+    "email": "haryhull@hotmail.com",
+    "url": "https://github.com/HarryGull"
+  },
+  "main": "app/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/HarryGull/generator-prototypeexpress.git"
+  }, 
+  "dependencies": {
+    "yeoman-generator": "~0.13.0"
+  },
+  "devDependencies": {
+    
+  },
+  "peerDependencies": {
+    "yo": ">=1.0.0-rc.1"
+  },
+  "engines": {
+    "node": ">=0.8.0",
+    "npm": ">=1.2.10"
+  },
+   "license": "MIT"
+}
