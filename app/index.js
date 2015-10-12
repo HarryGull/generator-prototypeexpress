@@ -300,9 +300,12 @@ NodeExpressGenerator.prototype.assets = function assets() {
 
  };
 
+
+/*
 NodeExpressGenerator.prototype.app = function app() {
   this.copy('app.js', 'app.js');
 };
+*/
 
 /*
 NodeExpressGenerator.prototype.procfile = function procfile() {
