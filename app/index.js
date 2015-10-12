@@ -174,14 +174,6 @@ NodeExpressGenerator.prototype.git = function git() {
   this.copy('gitignore', '.gitignore');
 };
 
-NodeExpressGenerator.prototype.bower = function bower() {
-  this.copy('bowerrc', '.bowerrc');
-  this.copy('_bower.json', 'bower.json');
-};
-
-NodeExpressGenerator.prototype.jshint = function jshint() {
-  this.copy('jshintrc', '.jshintrc');
-};
 
 NodeExpressGenerator.prototype.editorConfig = function editorConfig() {
   this.copy('editorconfig', '.editorconfig');
@@ -357,7 +349,6 @@ NodeExpressGenerator.prototype.versiontxt = function versiontxt() {
   this.copy('VERSION.txt', 'VERSION.txt');
 };
 
-No
 /*deExpressGenerator.prototype.startpid = function startpid() {
   this.copy('start.pid', '.start.pid');
 };
