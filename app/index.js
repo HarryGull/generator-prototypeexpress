@@ -160,6 +160,9 @@ NodeExpressGenerator.prototype.askFor = function askFor() {
   }.bind(this));
 };
 
+NodeExpressGenerator.prototype.routes = function routes() {
+  this.copy('routes.js', 'app/routes.js');
+};
 
 NodeExpressGenerator.prototype.gruntfile = function gruntfile() {
   this.copy('Gruntfile.js', 'Gruntfile.js');
