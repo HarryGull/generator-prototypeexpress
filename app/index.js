@@ -21,143 +21,26 @@ NodeExpressGenerator.prototype.askFor = function askFor() {
   // have Yeoman greet the user.
   console.log(this.yeoman);
 
+
   var prompts = [
-    {
-      name: 'projectName',
-      message: 'What would you like to call your project?'
-    },
-    {
-      name: 'features',
-      type: 'checkbox',
-      message: 'Would you like to use any of these?\n    Use the arrow keys to move and space to check/uncheck.',
-      choices: [{
-        name: 'Inuit.css',
-        value: 'useInuit',
-        checked: true
-      },
-      {
-        name: 'Bourbon',
-        value: 'useBourbon',
-        checked: true
-      },
-      {
-        name: 'Angular',
-        value: 'useAngular',
-        checked: true
-      },
-      {
-        name: 'jQuery',
-        value: 'useJQuery',
-        checked: false
-      }]
-    },
-    {
-      name: 'editors',
-      type: 'checkbox',
-      message: 'Which editor will you be developing in?\n    Please select only one.\n    (We use this to launch the project in your editor.)',
-      choices: [{
-        name: 'Sublime Text 2',
-        value: 'useSublimeText2',
-        checked: true
-      },
-      {
-        name: 'WebStorm',
-        value: 'useWebStorm',
-        checked: false
-      },
-      {
-        name: 'Coda2',
-        value: 'useCoda2',
-        checked: false
-      },
-      {
-        name: 'Chocolat',
-        value: 'useChocolat',
-        checked: false
-      },
-      {
-        name: 'TextMate',
-        value: 'useTextMate',
-        checked: false
-      },
-      {
-        name: 'None',
-        value: 'useNone',
-        checked: false
-      }]
-    },
-    {
-      name: 'browsers',
-      type: 'checkbox',
-      message: 'Which browser do you primarily use in developement?\n    Please select only one.\n    (We use this to launch your project in your browser.)',
-      choices: [{
-        name: 'Google Chrome',
-        value: 'useGoogleChrome',
-        checked: true
-      },
-      {
-        name: 'Firefox',
-        value: 'useFirefox',
-        checked: false
-      },
-      {
-        name: 'Safari',
-        value: 'useSafari',
-        checked: false
-      },
-      {
-        name: 'Opera',
-        value: 'useOpera',
-        checked: false
-      }]
-    },
-    {
-      name: 'heroku',
-      type: 'confirm',
-      message: 'Will you be deploying to Heroku?',
-      default: true
-    } 
-  ];
+		{
+			name: 'RunOnComplete',
+			type: 'confirm',
+			message: 'Do you want to start the application in localhost on compeltion?',
+			default: false
+		}
+	];
 
-  this.prompt(prompts, function (answers) {
-  // this.prompt(prompts, function (answers) {
 
-    this.projectName = answers.projectName;
 
-    // features
-    var features = answers.features;
-    function hasFeature(feat) { return features.indexOf(feat) !== -1; }
-    
-    this.useInuit = hasFeature('useInuit');
-    this.useBourbon = hasFeature('useBourbon');
-    this.useAngular = hasFeature('useAngular');
-    this.useJQuery = hasFeature('useJQuery');
-
-    // editors
-    var editors = answers.editors;
-    function hasEditor(edit) { return editors.indexOf(edit) !== -1; }
-
-    this.useSublimeText2 = hasEditor('useSublimeText2');
-    this.useWebStorm = hasEditor('useWebStorm');
-    this.useCoda2 = hasEditor('useCoda2');
-    this.useChocolat = hasEditor('useChocolat');
-    this.useTextMate = hasEditor('useTextMate');
-    this.useNone = hasEditor('useNone');
-
-    // browsers
-    var browsers = answers.browsers;
-    function hasBrowser(browse) { return browsers.indexOf(browse) !== -1; }
-
-    this.useGoogleChrome = hasBrowser('useGoogleChrome');
-    this.useFirefox = hasBrowser('useFirefox');
-    this.useSafari = hasBrowser('useSafari');
-    this.useOpera = hasBrowser('useOpera');
-
-    // heroku
-    this.heroku = answers.heroku;
-
-    cb();
-  }.bind(this));
+  	/**
+	 * If you add a prompt above, make sure you add it below here as well
+	 * e.g this.newName = props.newName;
+	 */
+	this.prompt(prompts, function (props) {
+		this.RunOnComplete = props.RunOnComplete;
+		cb();
+	}.bind(this));
 };
 
 NodeExpressGenerator.prototype.routes = function routes() {

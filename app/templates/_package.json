@@ -6,6 +6,14 @@
   "engines": {
     "node": "0.10.x"
   },
+
+<%
+  if (RunOnComplete == true) {%>
+  "scripts": {
+    "postinstall": "node app/start.js"
+      },<%
+} %>
+
   "dependencies": {
     "express": "3.4.7",
     "express-writer": "0.0.4",
