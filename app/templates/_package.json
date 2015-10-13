@@ -10,7 +10,7 @@
 <%
   if (RunOnComplete == true) {%>
   "scripts": {
-    "postinstall": "node app/start.js"
+    "postinstall": "node start.js"
       },<%
 } %>
 
